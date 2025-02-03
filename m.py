@@ -6,8 +6,8 @@ from threading import Thread
 
 loop = asyncio.new_event_loop()
 
-TOKEN = "7342831188:AAE8vw_1EAvy-ozsgeq5-kPg-VvNMRkaNHM"
-FORWARD_CHANNEL_ID = -1002354151287
+TOKEN = "7618230439:AAFfDVMQh9KbbxpdCbvm7b9OoDWdNcSLeF4"
+FORWARD_CHANNEL_ID = -1002220400423
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
@@ -37,8 +37,8 @@ def handle_start(message):
         status = "अनुमति लंबित है" if user_id not in authorized_users else "अनुमति स्वीकृत"
 
         welcome_message = f"""
-*Welcome to 𝐀𝐏𝐄𝐗 𝐂𝐇𝐄𝐀𝐓𝐒🚀  
-ANY INQUIRYS AND BUY_ @ApExcheatOw।
+*Welcome to.   𝗜𝗟𝗟𝗘𝗚𝗔𝗟 𝗖𝗛𝗘𝗔𝗧 𝗩𝗜𝗣 𝗦𝗘𝗥𝗩𝗘𝗥 🚀  
+ANY INQUIRYS AND BUY_ @ILLEGALCHEAT78
 
 *आपकी जानकारी:*  
 👤 नाम: {full_name}  
@@ -104,7 +104,7 @@ def handle_attack_command(message):
 
     bot.send_message(message.chat.id, "💣 अटैक शुरू करने के लिए तैयार?\n"
                                       "टारगेट IP, पोर्ट और समय (सेकंड में) भेजें।\n"
-                                      "उदाहरण: `167.67.25 6296 240` 🔥", parse_mode='Markdown')
+                                      "उदाहरण: `167.67.25 6296 300` 🔥", parse_mode='Markdown')
     bot.register_next_step_handler(message, process_attack_command)
 
 
@@ -120,8 +120,8 @@ def process_attack_command(message):
         if target_port in blocked_ports:
             bot.send_message(message.chat.id, f"🔒 पोर्ट {target_port} ब्लॉक कर दिया गया है।", parse_mode='Markdown')
             return
-        if duration > 240:
-            bot.send_message(message.chat.id, "⏳ अधिकतम समय 240 सेकंड है।", parse_mode='Markdown')
+        if duration > 300:
+            bot.send_message(message.chat.id, "⏳ अधिकतम समय 300 सेकंड है।", parse_mode='Markdown')
             return
 
         bot.attack_in_progress = True
@@ -135,7 +135,7 @@ def process_attack_command(message):
                                           f"समय: {duration} सेकंड!", parse_mode='Markdown')
         
         # New reply after attack launch with your updated message
-        bot.send_message(message.chat.id, "⚠️ If you do not provide feedback, you may be banned from the group. plz provide feedback. @ApExcheatOw")
+        bot.send_message(message.chat.id, "⚠️ If you do not provide feedback, you may be banned from the group. plz provide feedback. @ILLEGALCHEAT78")
 
     except Exception as e:
         logging.error(f"Error processing attack command: {e}")
